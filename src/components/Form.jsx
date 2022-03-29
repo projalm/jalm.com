@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import Social from "../pages/Social";
 
 const theme = createTheme({
   typography: {
@@ -74,7 +75,14 @@ const Form = () => {
   };
 
   return (
-    <div id="Contacto">
+    <Box
+      id="Contacto"
+      sx={{
+        display: { xs: "flex" },
+        flexDirection: { xs: "column" },
+        justifyContent: { xs: "center" },
+      }}
+    >
       <Box>
         <Typography
           variant="h3"
@@ -86,17 +94,22 @@ const Form = () => {
           Contacto
         </Typography>
       </Box>
-      <Box component="form">
+      <Box component="form" sx={{ display: { sm: "flex", flexWrap: "wrap" } }}>
         <ValidationTextField
           label="Correo"
           id="outlined-required"
-          sx={{ width: 553, marginRight: 5 }}
+          sx={{
+            width: { xs: 1, lg: 553, md: 1, sm: 1 },
+            marginRight: { md: 0, lg: 5 },
+          }}
         />
         <ValidationTextField
-          width="100px"
           id="outlined-required"
           label="Nombre o Empresa"
-          sx={{ width: 553 }}
+          sx={{
+            width: { xs: 1, lg: 553, md: 1, sm: 1 },
+            marginTop: { xs: "10px", sm: "10px", md: "10px", lg: "0px" },
+          }}
         />
         <MultilineText
           id="outlined-multiline-static"
@@ -119,7 +132,8 @@ const Form = () => {
           </Box>
         </ThemeProvider>
       </Box>
-    </div>
+      <Social />
+    </Box>
   );
 };
 

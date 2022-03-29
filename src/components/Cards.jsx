@@ -25,6 +25,7 @@ const Cards = () => {
         height: 500,
         width: 500,
         marginTop: 10,
+        marginLeft: { xs: "20px" },
         minWidth: 275,
         display: "flex",
         backdropFilter: "blur(40px)",

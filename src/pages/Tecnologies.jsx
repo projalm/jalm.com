@@ -5,7 +5,7 @@ import Cards from "../components/Cards";
 
 const Tecnologies = () => {
   return (
-    <Box id="Tecnologias">
+    <Box id="Tecnologias" sx={{ marginRight: 0 }}>
       <Typography
         variant="h3"
         mt={5}
@@ -17,7 +17,8 @@ const Tecnologies = () => {
       <Box
         sx={{
           display: { xs: "block", md: "flex" },
-          justifyContent: "space-between",
+          flexWrap: { md: "wrap" },
+          justifyContent: { md: "center", lg: "space-between" },
         }}
       >
         <Cards></Cards>

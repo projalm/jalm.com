@@ -11,12 +11,11 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Container fixed>
+      <Container>
         <Profile />
         <Tecnologies />
-        <Portafolio id="portafolio" />
+        <Portafolio />
         <Form />
-        <Social />
       </Container>
     </div>
   );

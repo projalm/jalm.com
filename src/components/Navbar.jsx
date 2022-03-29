@@ -83,16 +83,14 @@ const Navbar = () => {
       <CssBaseline />
       <ScrollToColor01>
         <AppBar
-          position="sticky"
           defaultValue={30}
           sx={{
             background: "none",
             boxShadow: "none",
-            width: { xs: 1, sm: 1 },
           }}
         >
           <Container maxWidth="xl">
-            <Toolbar disableGutters>
+            <Toolbar>
               <Typography
                 variant="h6"
                 noWrap

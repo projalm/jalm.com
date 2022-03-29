@@ -46,7 +46,7 @@ const Portafolio = () => {
       </Typography>
       <ThemeProvider theme={theme}>
         <Box sx={{ marginBottom: 5 }}>
-          <Box sx={{ width: "400px", height: "300px" }}>
+          <Box sx={{ width: "400px", height: "300px", marginLeft: { xs: 5 } }}>
             <Card
               sx={{
                 borderRadius: 1,
