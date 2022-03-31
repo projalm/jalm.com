@@ -23,9 +23,9 @@ const Cards = () => {
       // className="blur"
       sx={{
         height: 500,
-        width: 500,
+        width: { xs: 1, sm: 500, md: 500 },
         marginTop: 10,
-        marginLeft: { xs: "20px" },
+        marginLeft: { md: "20px" },
         minWidth: 275,
         display: "flex",
         backdropFilter: "blur(40px)",
@@ -37,9 +37,9 @@ const Cards = () => {
         <Box
           component={"img"}
           sx={{
-            height: 120,
-            width: 350,
-            marginLeft: 8,
+            height: { xs: "60px", sm: "80px", md: 120 },
+            width: { xs: "180px", sm: "210px", md: 350 },
+            marginLeft: { xs: 5, sm: 15, md: 8 },
           }}
           alt="..."
           src="./assets/img/tecno1.png"
@@ -47,10 +47,9 @@ const Cards = () => {
         <Box
           component={"img"}
           sx={{
-            height: 100,
-            width: 250,
-            marginTop: 2,
-            marginLeft: 2,
+            height: { xs: 80, sm: 100 },
+            width: { xs: 230, sm: 250 },
+            marginLeft: { xs: 0, sm: 2 },
           }}
           alt="..."
           src="./assets/img/tecno2.png"
@@ -58,8 +57,8 @@ const Cards = () => {
         <Box
           component={"img"}
           sx={{
-            height: 150,
-            width: 150,
+            height: { xs: 110, sm: 150 },
+            width: { xs: 120, sm: 150 },
           }}
           alt="..."
           src="./assets/img/tecno3.png"
@@ -67,9 +66,9 @@ const Cards = () => {
         <Box
           component={"img"}
           sx={{
-            height: 150,
-            width: 130,
-            marginLeft: 5,
+            height: { xs: "90px", md: 150 },
+            width: { xs: "120px", md: 130 },
+            marginLeft: { xs: 0, sm: 10, md: 8 },
           }}
           alt="..."
           src="./assets/img/tecno4.png"

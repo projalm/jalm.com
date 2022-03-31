@@ -22,9 +22,9 @@ const CardBack = () => {
       className="blur"
       sx={{
         height: 500,
-        width: 500,
+        width: { xs: 1, sm: 500, md: 500 },
         marginTop: 10,
-        marginLeft: { xs: "20px" },
+        marginLeft: { md: "20px" },
         minWidth: 275,
         display: "flex",
         backdropFilter: "blur(15px)",
@@ -36,8 +36,8 @@ const CardBack = () => {
         <Box
           component={"img"}
           sx={{
-            height: 100,
-            width: 400,
+            height: { xs: "50px", md: 100 },
+            width: { sx: "10px", md: 400 },
             marginTop: 2,
             marginLeft: 5,
           }}
@@ -56,7 +56,11 @@ const CardBack = () => {
           height=""
           image="./assets/img/tecno7.png"
           alt="html css javascript"
-          sx={{ width: 210, height: "110px" }}
+          sx={{
+            width: 210,
+            height: "110px",
+            marginLeft: { sm: 15, md: 2 },
+          }}
         />
         <CardMedia
           component="img"
@@ -70,7 +74,12 @@ const CardBack = () => {
           height=""
           image="./assets/img/tecno9.png"
           alt="html css javascript"
-          sx={{ width: 270, height: 70, marginBottom: 5, marginLeft: 17 }}
+          sx={{
+            width: { xs: "200px", sm: 270 },
+            height: 70,
+            marginBottom: 5,
+            marginLeft: { xs: 0, sm: 15, md: 17 },
+          }}
         />
       </CardContent>
     </Card>

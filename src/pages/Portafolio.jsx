@@ -7,6 +7,7 @@ import {
   createTheme,
   Typography,
   ThemeProvider,
+  Container,
 } from "@mui/material";
 import React from "react";
 
@@ -16,7 +17,7 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#ab47bc",
+      main: "rgb(228, 10, 216)",
     },
     secondary: {
       main: "#ab47bc",
@@ -34,95 +35,103 @@ const Portafolio = () => {
   ];
 
   return (
-    <Box id="Portafolio">
-      <Typography
-        variant="h3"
-        mt={10}
-        mb={10}
-        color="white"
-        sx={{ textAlign: "center" }}
-      >
-        Portafolio
-      </Typography>
-      <ThemeProvider theme={theme}>
-        <Box sx={{ marginBottom: 5 }}>
-          <Box sx={{ width: "400px", height: "300px", marginLeft: { xs: 5 } }}>
-            <Card
+    <Container>
+      <Box id="Portafolio">
+        <Typography
+          variant="h3"
+          mt={10}
+          mb={10}
+          color="white"
+          sx={{ textAlign: "center", fontSize: { xs: "40px" } }}
+        >
+          Portafolio
+        </Typography>
+        <ThemeProvider theme={theme}>
+          <Box sx={{ marginBottom: 5 }}>
+            <Box
               sx={{
-                borderRadius: 1,
-                backgroundImage: `url("./assets/img/BioRecycle.png")`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                width: "400px",
+                width: { xs: 1, md: "400px" },
                 height: "300px",
-                display: "flex",
-                fleWrap: "wrap",
-
-                alignItems: "center",
-                opacity: 1,
-                boxShadow: "1px 7px 32px 4px rgba(0,0,0,0.75)",
-                "&:hover": {
-                  opacity: 0.7,
-                },
-                "&:hover #set": {
-                  visibility: "visible",
-                  opacity: 1,
-                },
+                marginLeft: { xs: 0 },
               }}
             >
-              <CardContent
-                id="pro"
+              <Card
                 sx={{
+                  borderRadius: 1,
+                  backgroundImage: `url("./assets/img/BioRecycle.png")`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  width: { xs: 1, md: "400px" },
+                  height: "300px",
                   display: "flex",
-                  justifyContent: "center",
-                  flexWrap: "wrap",
-                  "&:last-child": {
-                    paddingBottom: "0px",
+                  fleWrap: "wrap",
+
+                  alignItems: "center",
+                  opacity: 1,
+                  boxShadow: "1px 7px 32px 4px rgba(0,0,0,0.75)",
+                  "&:hover": {
+                    opacity: 0.7,
+                  },
+                  "&:hover #set": {
+                    visibility: "visible",
+                    opacity: 1,
                   },
                 }}
               >
-                {tecno.map((tec) => (
-                  <Button
-                    id="set"
-                    variant="contained"
-                    color="primary"
-                    size="small"
-                    key={tec}
-                    sx={{
-                      marginRight: 1,
+                <CardContent
+                  id="pro"
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                    "&:last-child": {
+                      paddingBottom: "0px",
+                    },
+                  }}
+                >
+                  {tecno.map((tec) => (
+                    <Button
+                      id="set"
+                      variant="contained"
+                      color="primary"
+                      size="small"
+                      key={tec}
+                      sx={{
+                        marginRight: 1,
 
-                      marginBottom: 1,
-                      visibility: "hidden",
-                      cursor: "default",
-                      "&:hover": {
-                        opacity: 1,
-                      },
-                    }}
-                  >
-                    {tec}
-                  </Button>
-                ))}
-              </CardContent>
-            </Card>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-around",
-                marginTop: 2,
-              }}
-            >
-              <Button variant="outlined" color="primary" size="medium">
-                Repositorio
-              </Button>
-              <Button variant="outlined" color="primary" size="medium">
-                Proyecto
-              </Button>
+                        marginBottom: 1,
+                        visibility: "hidden",
+                        cursor: "default",
+                        "&:hover": {
+                          opacity: 1,
+                        },
+                      }}
+                    >
+                      {tec}
+                    </Button>
+                  ))}
+                </CardContent>
+              </Card>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  marginTop: 2,
+                }}
+              >
+                <Button variant="outlined" color="primary" size="medium">
+                  Repositorio
+                </Button>
+                <Button variant="outlined" color="primary" size="medium">
+                  Proyecto
+                </Button>
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </ThemeProvider>
-    </Box>
+        </ThemeProvider>
+      </Box>
+    </Container>
   );
 };
 

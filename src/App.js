@@ -1,23 +1,29 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Profile from "./pages/Profile";
-import Container from "@mui/material/Container";
 import Tecnologies from "./pages/Tecnologies";
 import Portafolio from "./pages/Portafolio";
 import Form from "./components/Form";
-import Social from "./pages/Social";
+import { Box, Container } from "@mui/material";
 
 function App() {
   return (
-    <div>
+    <Box>
       <Navbar />
-      <Container>
-        <Profile />
-        <Tecnologies />
-        <Portafolio />
-        <Form />
-      </Container>
-    </div>
+      <Profile />
+      <Box
+        component={"img"}
+        sx={{
+          height: { xs: 10, sm: 10, md: 10 },
+          width: { xs: 1, sm: 1, md: 1 },
+        }}
+        alt="..."
+        src="./assets/img/line.png"
+      />
+      <Tecnologies />
+      <Portafolio />
+      <Form />
+    </Box>
   );
 }
 
