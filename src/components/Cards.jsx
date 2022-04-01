@@ -20,26 +20,35 @@ const bull = (
 const Cards = () => {
   return (
     <Card
-      // className="blur"
       sx={{
         height: 500,
-        width: { xs: 1, sm: 500, md: 500 },
+        width: { xs: 180, sm: 500, md: 500 },
         marginTop: 10,
-        marginLeft: { md: "20px" },
-        minWidth: 275,
+        marginLeft: { md: "0" },
+        marginRight: { xs: 5, sm: 0, md: 5 },
         display: "flex",
         backdropFilter: "blur(40px)",
         backgroundColor: "rgba(243, 243, 243, 0.3);",
         boxShadow: "1px 7px 32px 4px rgba(0,0,0,0.75)",
       }}
     >
-      <CardContent sx={{ display: "flex", flexWrap: "wrap" }}>
+      <CardContent
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          width: { xs: "96%", sm: "none" },
+          maxWidth: { xs: "960px", sm: "none" },
+          margin: { xs: "0", sm: "none" },
+        }}
+      >
         <Box
           component={"img"}
           sx={{
-            height: { xs: "60px", sm: "80px", md: 120 },
-            width: { xs: "180px", sm: "210px", md: 350 },
-            marginLeft: { xs: 5, sm: 15, md: 8 },
+            height: { xs: "40px", sm: "80px", md: 120 },
+            width: { xs: "130px", sm: "210px", md: 350 },
+            marginLeft: { xs: 0, sm: 15, md: 8 },
+            marginRight: { xs: 5 },
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/tecno1.png"
@@ -47,9 +56,11 @@ const Cards = () => {
         <Box
           component={"img"}
           sx={{
-            height: { xs: 80, sm: 100 },
-            width: { xs: 230, sm: 250 },
+            height: { xs: 50, sm: 100 },
+            width: { xs: 150, sm: 250 },
             marginLeft: { xs: 0, sm: 2 },
+            marginRight: { xs: 5 },
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/tecno2.png"
@@ -59,6 +70,8 @@ const Cards = () => {
           sx={{
             height: { xs: 110, sm: 150 },
             width: { xs: 120, sm: 150 },
+
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/tecno3.png"
@@ -68,7 +81,9 @@ const Cards = () => {
           sx={{
             height: { xs: "90px", md: 150 },
             width: { xs: "120px", md: 130 },
-            marginLeft: { xs: 0, sm: 10, md: 8 },
+            marginLeft: { xs: 4, sm: 10, md: 8 },
+            marginRight: { xs: 3 },
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/tecno4.png"
@@ -78,7 +93,9 @@ const Cards = () => {
           sx={{
             height: 100,
             width: 120,
-            marginLeft: 10,
+            marginLeft: { xs: 1, sm: 10 },
+            marginRight: { xs: 3 },
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/git.png"

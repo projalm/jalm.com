@@ -23,7 +23,7 @@ const Profile = () => {
             sx={{
               alignItems: "center",
               display: { xs: "flex", md: "flex" },
-              fontSize: { xs: "15px" },
+              fontSize: { xs: "15px", sm: "25px" },
             }}
           >
             {/* <Typewriter
@@ -43,10 +43,10 @@ const Profile = () => {
               options={{ delay: 20 }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Lorem ipsum dolor sit amet con estupido")
-                  .deleteChars(8)
+                  .typeString("Hola, ¿que tal?\n")
+                  // .deleteChars()
                   .typeString(
-                    "genio elit. Quo eligendi pariatur nemo ab aperiam sequi."
+                    " Bienvenido a mi espacio en la web. Te presento un poco de mi y de mis conocimientos"
                   )
 
                   .callFunction(() => {

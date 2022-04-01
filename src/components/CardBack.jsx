@@ -19,66 +19,86 @@ const bull = (
 const CardBack = () => {
   return (
     <Card
-      className="blur"
       sx={{
         height: 500,
-        width: { xs: 1, sm: 500, md: 500 },
+        width: { xs: 180, sm: 500, md: 500 },
         marginTop: 10,
-        marginLeft: { md: "20px" },
-        minWidth: 275,
+        marginLeft: { md: "0px" },
         display: "flex",
         backdropFilter: "blur(15px)",
         backgroundColor: "rgba(243, 243, 243, 0.3);",
         boxShadow: "1px 7px 32px 4px rgba(0,0,0,0.75)",
       }}
     >
-      <CardContent sx={{ display: "flex", flexWrap: "wrap" }}>
+      <CardContent
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          width: { xs: "96%", sm: "none" },
+          maxWidth: { xs: "960px", sm: "none" },
+          margin: { xs: "0", sm: "none" },
+        }}
+      >
         <Box
           component={"img"}
           sx={{
-            height: { xs: "50px", md: 100 },
-            width: { sx: "10px", md: 400 },
-            marginTop: 2,
-            marginLeft: 5,
+            height: { xs: "30px", md: 100 },
+            width: { xs: "150px", md: 400 },
+            marginTop: { xs: 0, sm: 2 },
+            marginLeft: { xs: 1, sm: 5 },
+            marginRight: { xs: 5 },
+            minWidth: 5,
           }}
           alt="..."
           src="./assets/img/tecno5.png"
         />
-        <CardMedia
+        <Box
           component="img"
-          height=""
-          image="./assets/img/tecno6.png"
-          alt="html css javascript"
-          sx={{ width: 200, height: 100 }}
-        />
-        <CardMedia
-          component="img"
-          height=""
-          image="./assets/img/tecno7.png"
+          src="./assets/img/tecno6.png"
           alt="html css javascript"
           sx={{
-            width: 210,
-            height: "110px",
-            marginLeft: { sm: 15, md: 2 },
+            width: { xs: 100, sm: 200 },
+            height: { xs: 60, sm: 100 },
+            marginRight: { xs: 5, sm: 0 },
+            marginLeft: { xs: 2, sm: 0 },
+            minWidth: 5,
           }}
         />
-        <CardMedia
+        <Box
           component="img"
-          height=""
-          image="./assets/img/tecno8.png"
-          alt="html css javascript"
-          sx={{ width: 222, height: 113, marginLeft: 5 }}
-        />
-        <CardMedia
-          component="img"
-          height=""
-          image="./assets/img/tecno9.png"
+          src="./assets/img/tecno7.png"
           alt="html css javascript"
           sx={{
-            width: { xs: "200px", sm: 270 },
-            height: 70,
-            marginBottom: 5,
+            width: { xs: 150, sm: 210 },
+            height: { xs: 80, sm: "110px" },
+            marginLeft: { sm: 15, md: 0 },
+            marginRight: { xs: 5, sm: 0 },
+            minWidth: 5,
+          }}
+        />
+        <Box
+          component="img"
+          src="./assets/img/tecno8.png"
+          alt="html css javascript"
+          sx={{
+            width: { xs: 150, sm: 222 },
+            height: { xs: 90, sm: 113 },
+            marginLeft: { xs: 0, sm: 5 },
+            marginRight: { xs: 5 },
+            minWidth: 5,
+          }}
+        />
+        <Box
+          component="img"
+          src="./assets/img/tecno9.png"
+          alt="html css javascript"
+          sx={{
+            width: { xs: "150px", sm: 270 },
+            height: { xs: 80, sm: 120 },
+            marginBottom: { xs: 0, sm: 5, md: "none" },
             marginLeft: { xs: 0, sm: 15, md: 17 },
+            marginRight: { xs: 5 },
+            minWidth: 5,
           }}
         />
       </CardContent>

@@ -42,7 +42,7 @@ const Portafolio = () => {
           mt={10}
           mb={10}
           color="white"
-          sx={{ textAlign: "center", fontSize: { xs: "40px" } }}
+          sx={{ textAlign: "center", fontSize: { xs: "25px", md: "40px" } }}
         >
           Portafolio
         </Typography>

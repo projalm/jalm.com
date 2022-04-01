@@ -9,19 +9,20 @@ const Tecnologies = () => {
       <Box id="Tecnologias" sx={{ marginRight: { xs: 0 } }}>
         <Typography
           variant="h3"
-          mt={5}
+          mt={15}
           color="white"
-          sx={{ textAlign: "center", fontSize: { xs: "40px" } }}
+          sx={{ textAlign: "center", fontSize: { xs: "25px", md: "40px" } }}
         >
           Tecnologias
         </Typography>
         <Box
           sx={{
-            display: { xs: "block", sm: "flex", md: "flex" },
-            flexWrap: { sm: "wrap", md: "wrap" },
+            display: { xs: "flex", sm: "flex", md: "flex" },
+            flexWrap: { sm: "wrap", md: "nowrap" },
             justifyContent: {
+              xs: "space-between",
               sm: "center",
-              md: "center",
+              md: "space-between",
               lg: "space-between",
             },
           }}

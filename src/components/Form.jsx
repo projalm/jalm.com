@@ -91,7 +91,7 @@ const Form = () => {
             mt={30}
             mb={10}
             color="white"
-            sx={{ textAlign: "center", fontSize: { xs: "40px" } }}
+            sx={{ textAlign: "center", fontSize: { xs: "25px", md: "40px" } }}
           >
             Contacto
           </Typography>
