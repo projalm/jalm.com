@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/jalm.com/static/css/main.b9bed0b8.css",
-    "main.js": "/jalm.com/static/js/main.303e01c9.js",
+    "main.css": "/jalm.com/static/css/main.cd159c3a.css",
+    "main.js": "/jalm.com/static/js/main.f0dde16e.js",
     "static/js/787.ae0d8d37.chunk.js": "/jalm.com/static/js/787.ae0d8d37.chunk.js",
     "static/media/back.png": "/jalm.com/static/media/back.de7ea47ca72342e44ff2.png",
     "index.html": "/jalm.com/index.html",
-    "main.b9bed0b8.css.map": "/jalm.com/static/css/main.b9bed0b8.css.map",
-    "main.303e01c9.js.map": "/jalm.com/static/js/main.303e01c9.js.map",
+    "main.cd159c3a.css.map": "/jalm.com/static/css/main.cd159c3a.css.map",
+    "main.f0dde16e.js.map": "/jalm.com/static/js/main.f0dde16e.js.map",
     "787.ae0d8d37.chunk.js.map": "/jalm.com/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9bed0b8.css",
-    "static/js/main.303e01c9.js"
+    "static/css/main.cd159c3a.css",
+    "static/js/main.f0dde16e.js"
   ]
 }
