@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/jalm.com/static/css/main.cd159c3a.css",
-    "main.js": "/jalm.com/static/js/main.f0dde16e.js",
+    "main.js": "/jalm.com/static/js/main.46520f16.js",
     "static/js/787.ae0d8d37.chunk.js": "/jalm.com/static/js/787.ae0d8d37.chunk.js",
     "static/media/back.png": "/jalm.com/static/media/back.de7ea47ca72342e44ff2.png",
     "index.html": "/jalm.com/index.html",
     "main.cd159c3a.css.map": "/jalm.com/static/css/main.cd159c3a.css.map",
-    "main.f0dde16e.js.map": "/jalm.com/static/js/main.f0dde16e.js.map",
+    "main.46520f16.js.map": "/jalm.com/static/js/main.46520f16.js.map",
     "787.ae0d8d37.chunk.js.map": "/jalm.com/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd159c3a.css",
-    "static/js/main.f0dde16e.js"
+    "static/js/main.46520f16.js"
   ]
 }
